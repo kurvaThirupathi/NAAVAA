@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "title": "results",
+        "description": "Schools results from starting to 2011",
+        "description_1":"Schools results from starting to 2011",
+        "description_2":"Schools results from starting to 2011",
+        "organizer":"Dr. Chakrapani",
+        "date": "Sunday November 18, 2018",
+        "image": "/images/naavaa_results.jpg",
+        "date1": {
+        "month": "Nov",
+        "day": "18",
+        "year":"2018"
+        }
+        
+    },
+    {
+        "id": 2,
+        "title": "Background of APRS (BC) BOYs (Nȃgarjuna Vidyashramamu)",
+        "description": "Established on : September 17th 1987 Strategy of Establishment: Established as one of three regional residential schools (1 each for Telangana, Rayalaseema and Coastal Andhra) representing 10 Telangana Districts Geographic Coverage: 10 Districts of Telangana Selection Criteria: Top students from the district level entrance tests from all 10 Telangana districts are selected on merit basis",
+        "description_1":"Purpose: a). To identify potential top class students from the Backward Classes (BCs) in 10 Telangana Districts through entrance examination b). To provide quality education through better qualified teachers c). To provide scope for all round development of students d).To enable the students in becoming leaders in academic and extra-curricular activities",
+        "description_2":"School Achievements: Achievements those created history: Bagged State Rank in the very first year of going to Board Exams (Tenth Class State Ranks) – first time ever happened in India Produced first ever State Rank from a Telangana School State Best School Award (6 times): First Time Ever in the state of Andhra Pradesh 2002-03, 2005-06, 2006-07, 2007-08, 2008-09, and 2010-11",
+        "organizer":"Dr. Chakrapani",
+        "date": "Sunday November 18, 2018",
+        "image": "/images/carouse_4.jpg",
+        "date1": {
+        "month": "Nov",
+        "day": "18",
+        "year":"2018"
+        }
+        
+    },
+    {
+        "id": 3,
+        "title": "SMRUTHI (Dwi Dashabdi Utsav)",
+        "description": "What is SMRUTI? During the 7th Medical Camp in school in internal interactions within NAAVAA all of the group members in the meeting have shown excitement about conducting a big gathering of the students when it was found to be 20th year of school functioning. Immediately the core group of NAAVAA held discussions with the Convenor and decided to conduct a large scale get together in Nagarjuna Sagar in the school premises instead of Annual Meeting in Hyderabad. Discussions were held in meeting after meeting over a period of 3 months towards preparation for the event which was one of its kind in residential school system. More than 20 old students have dedicated their time and services for nearly 2 months which resulted in a get together event for which the members have given a title as “SMRUTI – Dwi Dashabdi Utsav”. This reflected the feelings of most of the alumni members who were visiting the school for the first time after they left the school and met most of their friends, seniors, juniors and teachers after a long gap. The meeting also brought nostalgic moments to all the participating students and teachers.",
+        "description_1":"SMRUTHI-Dwi Dashabdi Utsav – Dec 16th 2007: The SMRUTHI-Dwi Dashabdi Utsav was held in a grand ceremonious way on December 16th, 2007 in the school premises with the participation of all the current students, nearly 500 old students and approximately 200 current and ex-teaching and non-teaching staff. • Foundation stone for KRC was inaugurated by Ms. Sunitha, IAS, B.C. Welfare Director. • Ms. Sunitha inaugurated the SMRUTHI-Dwi Dashabdi Utsav. • Felicitation of nearly 200 current and ex-teaching and non-teaching staff was conducted. • Experience sharing among teachers and students was followed by the program. • Photo session was held where batch wise photos with teachers and students together was performed. • School day function followed after SMRUTHI celebrations.",
+        "description_2":"SMRUTHI to Silver Jubilee Celebrations: With the success of SMRUTHI the enthusiasm and confidence among the NAAVAAites was grown enormously to conduct the silver jubilee celebrations on the occasion of completion of 25 years from the inception of the school. With long term determination of the NAAVAA board members and few consistent supporters among the members of NAAVAA and with a painstaking efforts combined with structured planning and execution the most awaited silver jubilee celebrations was held in a festive mood. There were series of meetings held at regular intervals participated by numerous enthusiastic and responsible NAAVAA members in Hyderabad and in various district headquarters before making the final schedule. Attempts to meet District Collector of Nalgonda and other key decision makers were made number of times with persistent interest in getting the final sanction of Rajiv Vidya Mission building in the desired location in the school premises to harbour the Knowledge Resource Centre as thought through by the NAAVAAites",
+        "organizer":"Saidulu",
+        "date": "Tuesday November 13, 2018",
+        "image": "/images/events_4.jpg",
+        "date1": {
+        "month": "Nov",
+        "day": "13",
+        "year":"2018"
+        }
+        
+    },
+    {
+        "id": 4,
+        "title": "Why NAAVAA was established?",
+        "description": "While the school’s academic strength is increasing day by day, over the years the students who graduated from the school with flying colors have struggled throughout their higher education due to economic hardships and lack of continued supportive environment. The economically middle and lower class students of the school are not able to cope up with the stress and the cost of the education from intermediate onwards and the sudden change in the life style from a residential school to open environment. There are many examples of such students who grabbed or who just missed state ranks in tenth class but could not complete even intermediate education due to their poverty or settled in “less challenging - compared to – their potential” jobs.",
+        "description_1":"Hearing stories after stories of such students few students graduated from the school had taken initiatives in gathering few likeminded old students and founded “Alumni Association” (Regd. No: 2619/2001) in the year 2001 which was registered under Andhra Pradesh Public Societies Registration Act, 1350 Fasli (Act 1 of 1350F). The association started making frequent visits to the school every year since 2001 and has been providing “Bi-Annual Free Medical Camps, Career Guidance, Economic Support for higher education, Appointment of teachers on ad-hoc basis in the vacant posts and establishing a continuous capacity building sessions like training in painting, stress releasing sessions etc”.",
+        "description_2":"The association has grown in number and quality in the past few years which now comprises of around 1500 members in it. As the association grew, we decided to incorporate professionalism in the association and made it into an organization. As first step towards this we reregistered the association in the year 2007 as “Nāgarjuna Vidhyashramamu Alumni Association” in short “NAAVAA” (Regd. No. 1101/2007).",
+        "organizer":"Saidulu",
+        "date": "Tuesday November 13, 2018",
+        "image": "/images/carouse_3.jpg",
+        "date1": {
+        "month": "Nov",
+        "day": "13",
+        "year":"2018"
+        }
+        
+    }
+]
