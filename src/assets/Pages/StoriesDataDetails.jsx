@@ -72,9 +72,9 @@ function StoriesDataDetails(){
                     <p className="text-gray-500 mt-3">
                         No story found for ID: {id}
                     </p>
-
+{/* onClick={() => navigate("/stories")} */}
                     <button
-                        onClick={() => navigate("/stories")}
+                        onClick={() => navigate(-1)}
                         className="
                             mt-6
                             px-5
@@ -110,8 +110,9 @@ function StoriesDataDetails(){
 
                     </div>
                     <div className="absolute left-5 mt-10">
+                        {/* onClick={() => navigate("/stories")} */}
                     <button
-                        onClick={() => navigate("/stories")}
+                        onClick={() => navigate(-1)}
                         className="
                             text-white/80
                             hover:text-white

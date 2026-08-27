@@ -23,93 +23,93 @@ import carousel11 from "../../assets/images/carouse_11.jpeg";
 const slides = [
   {
     id: 1,
-    category: "Schools",
-    title: "21 Awesome Things About Music at Smart",
+    category: "Education",
+    title: "Inspiring Young Minds Through Quality Education",
     description:
-      "Known for its academic excellence and extraordinary faculty, the school offers programs leading to the M.A., M.S., M.Phil., and Ph.D. degrees.",
+      "We provide a supportive learning environment where students develop knowledge, confidence and the skills they need to build a bright future.",
     image:carousel1,
   },
 
   {
     id: 2,
     category: "Campus Life",
-    title: "Innovation Fund Supports Health Care",
+    title: "A Vibrant Campus Where Every Student Belongs",
     description:
-      "Discover an inspiring campus environment where students learn, collaborate and create meaningful experiences.",
+      "From academic activities to cultural celebrations, our campus provides students with opportunities to learn, connect, participate and grow together.",
     image:carousel2,
   },
 
   {
     id: 3,
     category: "Academics",
-    title: "Smart Graduate School of Arts & Science",
+    title: "Learning That Builds Knowledge and Character",
     description:
-      "Our academic programs combine knowledge, research and innovation to prepare students for a successful future.",
+      "Our academic programs encourage curiosity, creativity and critical thinking while helping students discover their strengths and achieve their goals.",
     image:carousel3,
   },
 
   {
     id: 4,
-    category: "Athletics",
-    title: "Gymnastics vs. Utah",
+    category: "Sports",
+    title: "Building Teamwork Through Sports and Activities",
     description:
-      "Experience an active university life with outstanding athletics, events and opportunities for every student.",
+      "Sports and extracurricular activities help students develop discipline, teamwork and leadership while maintaining a healthy and active lifestyle.",
     image:carousel4,
   },
   {
     id: 5,
-    category: "Schools",
-    title: "21 Awesome Things About Music at Smart",
+    category: "Students",
+    title: "Empowering Students to Discover Their Potential",
     description:
-      "Known for its academic excellence and extraordinary faculty, the school offers programs leading to the M.A., M.S., M.Phil., and Ph.D. degrees.",
+      "Every student is encouraged to explore new ideas, develop their talents and take part in experiences that shape their personal and academic journey.",
     image:carousel5,
   },
   {
     id: 6,
-    category: "Schools",
-    title: "21 Awesome Things About Music at Smart",
+    category: "Achievements",
+    title: "Celebrating Excellence and Student Achievements",
     description:
-      "Known for its academic excellence and extraordinary faculty, the school offers programs leading to the M.A., M.S., M.Phil., and Ph.D. degrees.",
+      "We celebrate the dedication and achievements of our students, encouraging them to pursue excellence both inside and outside the classroom.",
     image:carousel6,
   },
   {
     id: 7,
-    category: "Schools",
-    title: "21 Awesome Things About Music at Smart",
+    category: "Events",
+    title: "Creating Memorable Moments Through Campus Events",
     description:
-      "Known for its academic excellence and extraordinary faculty, the school offers programs leading to the M.A., M.S., M.Phil., and Ph.D. degrees.",
+      "Our events bring students, teachers, alumni and the wider community together to celebrate learning, creativity, culture and friendship.",
     image:carousel7,
   },
   {
     id: 8,
-    category: "Schools",
-    title: "21 Awesome Things About Music at Smart",
+    category: "Innovation",
+    title: "Encouraging Creativity, Innovation and New Ideas",
     description:
-      "Known for its academic excellence and extraordinary faculty, the school offers programs leading to the M.A., M.S., M.Phil., and Ph.D. degrees.",
+      "Students are inspired to think creatively, explore new possibilities and turn their ideas into meaningful learning experiences.",
     image:carousel8,
   },
   {
     id: 9,
-    category: "Schools",
-    title: "21 Awesome Things About Music at Smart",
+    category: "Community",
+    title: "Growing Together as a Strong Learning Community",
     description:
-      "Known for its academic excellence and extraordinary faculty, the school offers programs leading to the M.A., M.S., M.Phil., and Ph.D. degrees.",
+      "Our institution brings together students, teachers, families and alumni to create a welcoming community built on collaboration and shared values.",
     image:carousel9,
   },
   {
     id: 10,
-    category: "Schools",
-    title: "21 Awesome Things About Music at Smart",
+    category: "Alumni",
+    title: "Connecting Our Past, Present and Future",
     description:
-      "Known for its academic excellence and extraordinary faculty, the school offers programs leading to the M.A., M.S., M.Phil., and Ph.D. degrees.",
+      "Our alumni community continues to inspire current students through their experiences, achievements and lasting connection with the institution.",
     image:carousel10,
   },
   {
     id: 11,
-    category: "Schools",
-    title: "21 Awesome Things About Music at Smart",
+    category: "Future",
+    title: "Preparing Students for a Changing World",
     description:
-      "Known for its academic excellence and extraordinary faculty, the school offers programs leading to the M.A., M.S., M.Phil., and Ph.D. degrees.",
+      "With strong academic foundations and opportunities beyond the classroom, we prepare students to confidently embrace new challenges and future opportunities.",
     image:carousel11,
   }
 ];

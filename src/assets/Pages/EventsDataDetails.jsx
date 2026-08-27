@@ -70,9 +70,9 @@ const EventDataDetails = () => {
                                 <p className="text-gray-500 mt-3">
                                     No event found for ID: {id}
                                 </p>
-            
+            {/* onClick={() => navigate("/events")} */}
                                 <button
-                                    onClick={() => navigate("/events")}
+                                    onClick={() => navigate(-1)}
                                     className="
                                         mt-6
                                         px-5
@@ -108,8 +108,9 @@ const EventDataDetails = () => {
 
                     </div>
                     <div className="absolute left-5 mt-10">
+                        {/* onClick={() => navigate("/events")} */}
                     <button
-                        onClick={() => navigate("/events")}
+                        onClick={() => navigate(-1)}
                         className="
                             text-white/80
                             hover:text-white

@@ -6,7 +6,8 @@
     "description": "Topic: NAAVAA Clinic Time: 7:00 PM to 7:40 PM IST Dates: 9th May 2021- Dr. Vidyasagar (1990), Pediatrician and Dr. Pranay Kumar V (1990) from UK",
     "date": {
       "month": "MAY",
-      "day": "09"
+      "day": "09",
+       "year":"2021"
     },
     "image": "images/events_1.jpeg",
     "detailsUrl": "/events/1"
@@ -18,7 +19,8 @@
     "description": "NAAVAA is inviting you to a scheduled Zoom meeting. Dr. Gnanshewar, MD Pulmonology, will be the lead doctor tomorrow and will be talking for 5-10 minutes about Covid-19 before opening for Questions from participants. Mr. Dinesh Badu will be coordination lead for future meetings. Let's fight Corona together and together let's win.",
     "date": {
       "month": "MAY",
-      "day": "06"
+      "day": "06",
+       "year":"2021"
     },
     "image": "images/events_2.png",
     "detailsUrl": "/events/2"
@@ -30,7 +32,8 @@
     "description": "It is a proud movement for all of us it has been 18 years since naavaa formed and naavaa came up with true colors and tremendous growth of activities and good governing body founder presidents and last presidents. Lets all celebrate this happy movement with joy.",
     "date": {
       "month": "NOV",
-      "day": "27"
+      "day": "27",
+      "year":"2018"
     },
     "image": "images/events_3.jpeg",
     "detailsUrl": "/events/3"
@@ -42,7 +45,8 @@
     "description": "Medical Camp",
     "date": {
       "month": "SEP",
-      "day": "10"
+      "day": "10",
+       "year":"2018"
     },
     "image": "images/events_4.jpg",
     "detailsUrl": "/events/4"
@@ -54,7 +58,8 @@
     "description": "With the success of SMRUTHI the enthusiasm and confidence among the NAAVAAites has grown enormously to conduct the silver jubilee celebrations on the occasion of completion of 25 years from the inception of the school. With long term determination of the NAAVAA board members and few consistent supporters among the members of NAAVAA and with a painstaking efforts combined with structured planning and execution the most awaited silver jubilee celebrations was held in a festive mood.",
     "date": {
       "month": "DEC",
-      "day": "17"
+      "day": "17",
+       "year":"2012"
     },
     "image": "images/events_5.jpg",
     "detailsUrl": "/events/5"
@@ -66,7 +71,8 @@
     "description": "The SMRUTHI-Dwi Dashabdi Utsav was held in a grand ceremonious way on December 16th, 2007 in the school premises with the participation of all the current students, nearly 500 old students and approximately 200 current and ex-teaching and non-teaching staff.",
     "date": {
       "month": "DEC",
-      "day": "16"
+      "day": "16",
+      "year":"2007"
     },
     "image": "images/events_4.jpg",
     "detailsUrl": "/events/6"

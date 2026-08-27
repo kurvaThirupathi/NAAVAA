@@ -1,0 +1,37 @@
+[
+    {
+        "id":1,
+        "name":"Mr. Nitish Kothapalli",
+        "designation":"President",
+        "year":2009
+
+    },
+    {
+        "id":2,
+        "name":"Mr. Prabhudas",
+        "designation":"Vice President",
+        "year":1994
+
+    },
+    {
+        "id":3,
+        "name":"Mr. Shivajiraj Shivratri",
+        "designation":"General Secretary",
+        "year":2003
+
+    },
+    {
+        "id":4,
+        "name":"Mr. Sravan Kumar",
+        "designation":"Joint Secretary",
+        "year":2001
+
+    },
+    {
+        "id":5,
+        "name":"Mr. Yugendar Goshika",
+        "designation":"Treasurer",
+        "year":2002
+
+    }
+]
