@@ -80,6 +80,7 @@ function ContactUS(){
                                 
                                 <div className="text-gray-600 text-xl md:text-2xl font-semibold leading-10 mb-6 flex gap-2 items-center  md:flex-row flex-col">
                                     <h2>Send Us A Message</h2>
+                                    
                                     <div>
                                         
                                         <button type="button" onMouseEnter={()=>setShowTooltip(true)} onMouseLeave={()=>setShowTooltip(false)} className="">

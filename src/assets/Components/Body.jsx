@@ -10,6 +10,7 @@ import EventDataDetails from "../Pages/EventsDataDetails";
 import ContactUS from "../Pages/ContactUs";
 import StoriesData from "../Pages/StoriesData";
 import StoriesDataDetails from "../Pages/StoriesDataDetails";
+import ArchiveData from "../Pages/ArchiveData";
 
 const Body = () => {
     return (
@@ -21,6 +22,7 @@ const Body = () => {
             
             <Route path="/stories" element={<StoriesData />}></Route>
             <Route path="/stories/:id" element={<StoriesDataDetails />} />
+            <Route path="/archive_stories/:id" element={<ArchiveData />} />
             <Route path="/gallery" element={<Gallery />}></Route>
             <Route path="/notice-board" element={<NoticeBoard />}></Route>
             <Route path="/contact" element={<ContactUS />}/>
