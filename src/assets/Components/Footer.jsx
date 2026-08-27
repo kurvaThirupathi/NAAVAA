@@ -125,7 +125,7 @@ const Footer = () => {
                     <a class="mr-6 cursor-default md:mr-6 md:text-sm text-xs text-white flex text-font font-medium">&copy;
                     <p id="demo" class="mx-1">2026</p> navaa.org
                     </a>
-                    <a href="https://straunt.ai/" target="_blank" class="hover:underline md:text-sm text-xs text-white text-font font-medium">
+                    <a href="javascript:void(0);"  target="_blank" class="pointer-events-none md:text-sm text-xs text-white text-font font-medium">
                     Powered By NAAVAA</a>
                     </div>
                     </div>
