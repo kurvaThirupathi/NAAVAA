@@ -127,9 +127,9 @@ function StoriesDataDetails(){
                 </div>
             </div>
             <div className="bg-[#f5f5f5] py-5 relative bg-repeat bg-center bg-[url('https://themesflat.co/html/wizym/image/footer.jpg')]">
-                <div className="w-[95%] max-w-6xl mx-auto py-10">
-                    <div className="flex md:flex-row flex-col gap-8">
-                    <div className="md:w-3/4 w-full">
+                <div className="w-[95%] mx-auto py-10">
+                    <div className="flex md:flex-row flex-col gap-4">
+                    <div className="w-full">
                         <div className="bg-white border-l-4 border-[#f5a712] p-5 rounded-r-md shadow">
                             <div className="flex gap-3">
                                 <div className="flex flex-col gap-5 flex-1 w-3/4">
@@ -190,11 +190,7 @@ function StoriesDataDetails(){
 
                         </div>
                         </div>
-                        <div className="md:w-1/4 w-full">
-                            <h2 className="text-gray-600 text-xl md:text-2xl font-semibold leading-10">Archive</h2>
-                            <div class="w-14 h-0.5 bg-[#002147]">&nbsp;</div>
-                                <Archive />
-                        </div>
+                        
                     </div>
                 </div>
             </div>

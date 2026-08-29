@@ -22,7 +22,7 @@ const Body = () => {
             
             <Route path="/stories" element={<StoriesData />}></Route>
             <Route path="/stories/:id" element={<StoriesDataDetails />} />
-            <Route path="/archive_stories/:id" element={<ArchiveData />} />
+            <Route path="/archive_stories/:type/:id" element={<ArchiveData />} />
             <Route path="/gallery" element={<Gallery />}></Route>
             <Route path="/notice-board" element={<NoticeBoard />}></Route>
             <Route path="/contact" element={<ContactUS />}/>

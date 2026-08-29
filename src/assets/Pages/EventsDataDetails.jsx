@@ -181,12 +181,7 @@ const EventDataDetails = () => {
 
                 </div>
             
-                <div className="
-                    w-[95%]
-                    max-w-6xl
-                    mx-auto
-                    py-10
-                ">
+                <div className="w-[95%] mx-auto py-10">
 
                     
                     {/* <div className="

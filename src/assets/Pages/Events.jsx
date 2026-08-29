@@ -14,7 +14,7 @@ const Events = () => {
 };
   return (
     <section
-      className="relative min-h-[400px] bg-cover bg-center bg-no-repeat py-20"
+      className="relative min-h-[400px] bg-cover bg-center bg-no-repeat py-10"
       style={{
         backgroundImage: `url(${eventsBg})`,
       }}

@@ -70,4 +70,19 @@ body {
   width:600px!important;
   height:450px!important
 } */
+/* width */
 
+::-webkit-scrollbar {
+        width: 6px;
+    }
+    
+::-webkit-scrollbar-track {
+        border-radius: 8px;
+        background-color: #e7e7e7;
+        border: 1px solid #cacaca;
+    }
+    
+::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        background-color: #504f4f;
+    }

@@ -1,54 +1,193 @@
 {
-  "2018": [
-    {
-        "id": 1,
-        "title": "results",
-        "description": "Schools results from starting to 2011",
-        "date": {
-        "month": "Nov",
-        "day": "18",
-        "year":"2018"
-        },
-        "image": "/images/naavaa_results.jpg"
-        
-    },
-    {
-        "id": 2,
-        "title": "Background of APRS (BC) BOYs (Nȃgarjuna Vidyashramamu)",
-        "description": "Established on : September 17th 1987 Strategy of Establishment: Established as one of three regional residential schools (1 each for Telangana, Rayalaseema and Coastal Andhra) representing 10 Telangana Districts Geographic Coverage: 10 Districts of Telangana Selection Criteria: Top students from the district level entrance tests from all 10 Telangana districts are selected on merit basis",
-        "date": {
-        "month": "Nov",
-        "day": "18",
-        "year":"2018"
-        },
-        "image": "/images/carouse_4.jpg"
-        
-    },
-    {
-        "id": 3,
-        "title": "SMRUTHI (Dwi Dashabdi Utsav)",
-        "description": "What is SMRUTI? During the 7th Medical Camp in school in internal interactions within NAAVAA all of the group members in the meeting have shown excitement about conducting a big gathering of the students when it was found to be 20th year of school functioning. Immediately the core group of NAAVAA held discussions with the Convenor and decided to conduct a large scale get together in Nagarjuna Sagar in the school premises instead of Annual Meeting in Hyderabad. Discussions were held in meeting after meeting over a period of 3 months towards preparation for the event which was one of its kind in residential school system. More than 20 old students have dedicated their time and services for nearly 2 months which resulted in a get together event for which the members have given a title as “SMRUTI – Dwi Dashabdi Utsav”. This reflected the feelings of most of the alumni members who were visiting the school for the first time after they left the school and met most of their friends, seniors, juniors and teachers after a long gap. The meeting also brought nostalgic moments to all the participating students and teachers.",
-        "date": {
-        "month": "Nov",
-        "day": "13",
-        "year":"2018"
-        },
-        "image": "/images/events_4.jpg"
-        
-    },
-    {
-        "id": 4,
-        "title": "Why NAAVAA was established?",
-        "description": "While the school’s academic strength is increasing day by day, over the years the students who graduated from the school with flying colors have struggled throughout their higher education due to economic hardships and lack of continued supportive environment. The economically middle and lower class students of the school are not able to cope up with the stress and the cost of the education from intermediate onwards and the sudden change in the life style from a residential school to open environment. There are many examples of such students who grabbed or who just missed state ranks in tenth class but could not complete even intermediate education due to their poverty or settled in “less challenging - compared to – their potential” jobs.",
-        "date": {
-        "month": "Nov",
-        "day": "13",
-        "year":"2018"
-        },
-        "image": "/images/carouse_3.jpg"
-        
+  "2007": {
+    "Dec": {
+      "16": {
+        "stories": [
+          {
+            "id":1,
+            "title": "",
+            "description": "",
+            "image": ""
+          }
+        ],
+        "events": [
+          {
+            "id": 2,
+            "title": "SMRUTHI-Dwi Dashabdi Utsav - Dec 16th 2007",
+            "description": "The SMRUTHI-Dwi Dashabdi Utsav was held in a grand ceremonious way on December 16th, 2007 in the school premises with the participation of all the current students, nearly 500 old students and approximately 200 current and ex-teaching and non-teaching staff.",
+            "image": "/images/events_4.jpg"
+          }
+        ]
+      }
+      
     }
-  ]
-  
-  
+  },
+  "2012": {
+    "Dec": {
+      "17": {
+        "stories": [
+          {
+            "id":3,
+            "title": "",
+            "description": "",
+            "image": ""
+          }
+        ],
+        "events": [
+          {
+              "id":4,
+              "title": "Silver Jubilee Celebrations - 17th & 18th November 2012",
+              "description": "With the success of SMRUTHI the enthusiasm and confidence among the NAAVAAites has grown enormously to conduct the silver jubilee celebrations on the occasion of completion of 25 years from the inception of the school. With long term determination of the NAAVAA board members and few consistent supporters among the members of NAAVAA and with a painstaking efforts combined with structured planning and execution the most awaited silver jubilee celebrations was held in a festive mood.",
+              "image": "/images/events_5.jpg"
+             
+          }
+        ]
+      }
+      
+    }
+  },
+  "2018": {
+    "SEP": {
+      "10": {
+        "stories": [
+          {
+            "id":5,
+            "title": "",
+            "description": "",
+            "image": ""
+          }
+         
+        ],
+        "events": [
+          {
+              "id":6,
+              "title": "Medical Camp - Sep 10, 2018",
+              "description": "Medical Camp",
+              "image": "/images/events_4.jpg"
+             
+          }
+        ]
+      }
+    },
+    "Nov": {
+      "13": {
+        "stories": [
+          {
+            "id":7,
+            "title": "SMRUTHI (Dwi Dashabdi Utsav)",
+            "description": "What is SMRUTI? During the 7th Medical Camp in school in internal interactions within NAAVAA all of the group members in the meeting have shown excitement about conducting a big gathering of the students when it was found to be 20th year of school functioning. Immediately the core group of NAAVAA held discussions with the Convenor and decided to conduct a large scale get together in Nagarjuna Sagar in the school premises instead of Annual Meeting in Hyderabad. Discussions were held in meeting after meeting over a period of 3 months towards preparation for the event which was one of its kind in residential school system. More than 20 old students have dedicated their time and services for nearly 2 months which resulted in a get together event for which the members have given a title as “SMRUTI – Dwi Dashabdi Utsav”. This reflected the feelings of most of the alumni members who were visiting the school for the first time after they left the school and met most of their friends, seniors, juniors and teachers after a long gap. The meeting also brought nostalgic moments to all the participating students and teachers.",
+            "image": "/images/events_4.jpg"
+          },
+          {
+            "id":8,
+            "title": "Why NAAVAA was established?",
+            "description": "While the school’s academic strength is increasing day by day, over the years the students who graduated from the school with flying colors have struggled throughout their higher education due to economic hardships and lack of continued supportive environment. The economically middle and lower class students of the school are not able to cope up with the stress and the cost of the education from intermediate onwards and the sudden change in the life style from a residential school to open environment. There are many examples of such students who grabbed or who just missed state ranks in tenth class but could not complete even intermediate education due to their poverty or settled in “less challenging - compared to – their potential” jobs.",
+            "image": "/images/carouse_3.jpg"
+          }
+         
+        ],
+        "events": [
+          {
+              "id":9,
+              "title": "",
+              "description": "",
+              "image": ""
+             
+          }
+        ]
+      },
+      "18": {
+        "stories": [
+          {
+            "id":10,
+            "title": "results",
+            "description": "Schools results from starting to 2011",
+            "image": "/images/naavaa_results.jpg"
+          },
+          {
+            "id":11,
+             "title": "Background of APRS (BC) BOYs (Nȃgarjuna Vidyashramamu)",
+            "description": "Established on : September 17th 1987 Strategy of Establishment: Established as one of three regional residential schools (1 each for Telangana, Rayalaseema and Coastal Andhra) representing 10 Telangana Districts Geographic Coverage: 10 Districts of Telangana Selection Criteria: Top students from the district level entrance tests from all 10 Telangana districts are selected on merit basis",
+            "image": "/images/carouse_4.jpg"
+          }
+        ],
+        "events": [
+          {
+              "id":12,
+              "title": "",
+              "description": "",
+              "image": ""
+             
+          }
+        ]
+      },
+      "27": {
+        "stories": [
+          {
+            "id":13,
+            "title": "",
+            "description": "",
+            "image": ""
+          }
+         
+        ],
+        "events": [
+          {
+              "id":14,
+              "title": "naavaa.org launch by Hon.Secretary Sri. Mallaiah Battu Sir.",
+              "description": "It is a proud movement for all of us it has been 18 years since naavaa formed and naavaa came up with true colors and tremendous growth of activities and good governing body founder presidents and last presidents. Lets all celebrate this happy movement with joy.",
+              "image": "/images/events_3.jpeg"
+             
+          }
+        ]
+      }
+      
+    }
+  },
+   "2021": {
+    "May": {
+      "06": {
+        "stories": [
+          {
+            "id":15,
+            "title": "",
+            "description": "",
+            "image": ""
+          }
+         
+        ],
+        "events": [
+          {
+              "id":16,
+              "title": "NAAVAA Clinic",
+              "description": "NAAVAA is inviting you to a scheduled Zoom meeting. Dr. Gnanshewar, MD Pulmonology, will be the lead doctor tomorrow and will be talking for 5-10 minutes about Covid-19 before opening for Questions from participants. Mr. Dinesh Badu will be coordination lead for future meetings. Let's fight Corona together and together let's win.",
+              "image": "/images/events_2.png"
+             
+          }
+        ]
+      },
+      "09": {
+        "stories": [
+          {
+            "id":17,
+            "title": "",
+            "description": "",
+            "image": ""
+          }
+         
+        ],
+        "events": [
+          {
+              "id":18,
+              "title": "NAAVAA Clinic",
+              "description": "Topic: NAAVAA Clinic Time: 7:00 PM to 7:40 PM IST Dates: 9th May 2021- Dr. Vidyasagar (1990), Pediatrician and Dr. Pranay Kumar V (1990) from UK",
+              "image": "/images/events_1.jpg"
+             
+          }
+        ]
+      }
+    }
+    
+  }
 }
+
