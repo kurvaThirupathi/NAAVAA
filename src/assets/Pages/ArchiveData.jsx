@@ -203,27 +203,12 @@ function ArchiveData() {
 
             {imagePath && (
 
-              <div
-                className="
-                  relative
-                  w-full
-                  h-[220px]
-                  
-                  overflow-hidden
-                "
-              >
+              <div className="relative w-full h-[200px] overflow-hidden">
 
-                <img
-                  src={imagePath}
-                  alt={selectedData.title || "Archive"}
+                <img src={imagePath} alt={selectedData.title || "Archive"}
                   loading="lazy"
-                  className="
-                    w-full
-                    h-full
-                    object-cover
-                  "
+                  className="w-full h-full object-cover"
                   onError={(e) => {
-
                     console.log(
                       "Image not found:",
                       e.target.src
@@ -266,16 +251,7 @@ function ArchiveData() {
              
 
               <h1
-                className="
-                  text-xl
-                  md:text-3xl
-                  font-semibold
-                  text-gray-800
-                  leading-7
-                  md:leading-9
-                  mb-4
-                "
-              >
+                className="text-xl md:text-3xl font-semibold text-gray-800 leading-7 md:leading-9 mb-4">
 
                 {selectedData.title}
 

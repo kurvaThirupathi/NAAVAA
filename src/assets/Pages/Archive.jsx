@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
     return (
     <div className="w-full bg-white py-5 relative shadow-lg rounded-md max-h-[300px] min-h-[300px] overflow-y-auto overflow-x-hidden"> 
         <div className="px-4">
-            {Object.entries(data).map(([year, months]) => (
+            {Object.entries(data) .sort(([yearA], [yearB]) => Number(yearB) - Number(yearA))
+            .map(([year, months]) => (
                 <section key={year} className="mb-4" >
                     {/* ===================================================== YEAR ===================================================== */}
                     <div className="flex items-center gap-4 mb-2">
