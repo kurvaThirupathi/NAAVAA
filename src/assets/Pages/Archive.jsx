@@ -1,6 +1,16 @@
 import React from "react"; 
 import { Link } from "react-router-dom";
  import data from "../Data/archive.json";
+ const createSlug = (title) => {
+  return title
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
+};
   function Archive() { 
     return (
     <div className="w-full bg-white py-5 relative shadow-lg rounded-md max-h-[300px] min-h-[300px] overflow-y-auto overflow-x-hidden"> 
@@ -36,7 +46,7 @@ import { Link } from "react-router-dom";
                                                 </div>
                                                <div> 
                                                 {stories.map((story) => (
-                                                    <Link key={story.id} to={`/archive_stories/story/${story.id}`} className=" block mb-2 group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 " >
+                                                    <Link key={story.id} to={`/archive_stories/story/${createSlug(story.title)}`} state={{ id: story.id }} className=" block mb-2 group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 " >
                                                         <div className="p-2">
                                                             <h4 className=" text-[14px] font-base text-gray-800 group-hover:text-[#5f5c9e] transition-colors hover:underline line-clamp-2 " title={story.title} > {story.title} </h4>
                                                         </div>
@@ -64,7 +74,7 @@ import { Link } from "react-router-dom";
                                                         //         <h4 className=" text-[14px] font-base text-gray-800 " > {event.title} </h4>)}
                                                         //     </div>
                                                         // </div>
-                                                        <Link key={event.id} to={`/archive_stories/event/${event.id}`} className=" block mb-2 group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 " >
+                                                        <Link key={event.id} to={`/archive_stories/event/${createSlug(event.title)}`} state={{ id: event.id }} className=" block mb-2 group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 " >
                                                             <div className="p-2">
                                                                 <h4 className=" text-[14px] font-base text-gray-800 group-hover:text-[#5f5c9e] transition-colors hover:underline line-clamp-2 " title={event.title} > {event.title} </h4>
                                                             </div>

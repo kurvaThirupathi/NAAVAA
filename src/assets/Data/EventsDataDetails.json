@@ -1,9 +1,10 @@
 [
     {
         "id": 1,
-        "clinic": "NAAVAA Clinic",
+        "title": "NAAVAA Clinic",
+        "location": "NAAVAA Clinic - Let's fight Corona together and together let's win",
         "date": "Sunday May 09, 2021",
-        "title": "The event has Started!",
+        "clinic": "The event has Started!",
         "organizer": "NAAVAA Clinic",
          "image": "/images/events_1.jpeg",
         "message": "Let's fight Corona together and together let's win",
@@ -16,19 +17,20 @@
             "fightwithcorona"
         ],
         "time": "07:00 PM",
-        "event_details": {
-            "topic": "NAAVAA Clinic",
-            "time": "7:00 PM to 7:40 PM IST",
-            "date": "9th May 2021"
-            
-        }
+       
+        "date1": {
+      "month": "MAY",
+      "day": "09",
+       "year":"2021"
+    }
        
     },
     {
         "id": 2,
-        "clinic": "NAAVAA Clinic",
+        "title": "NAAVAA Clinic",
+         "location": "NAAVAA Clinic - Let's fight Corona together and together let's win",
         "date": "Thursday May 06, 2021",
-        "title": "The event has Started!",
+        "clinic": "The event has Started!",
         "image": "/images/events_2.png",
         "organizer": "NAAVAA Clinic",
         "message": "Let's fight Corona together and together let's win",
@@ -41,20 +43,21 @@
            
         ],
         "time": "07:00 PM",
-        "event_details": {
-            "topic": "NAAVAA Clinic",
-            "time": "7:00 PM to 7:40 PM IST",
-            "date": "9th May 2021"
-            
-        }
+       
+        "date1": {
+      "month": "MAY",
+      "day": "06",
+       "year":"2021"
+    }
        
     },
     {
         "id": 3,
-        "clinic": "NAAVAA Clinic",
+        "title": "naavaa.org launch by Hon.Secretary Sri. Mallaiah Battu Sir.",
         "date": "Tuesday November 27, 2018",
-        "title": "The event has Started!",
+        "clinic": "The event has Started!",
         "organizer": "Sri. Mallaiah Battu Sir Home",
+        "location": "Sri. Mallaiah Battu Sir Home",
         "image": "/images/events_3.jpeg",
         "message": "naavaa.org launch by Hon.Secretary Sri. Mallaiah Battu Sir.",
         "desc":"It is a proud movement for all of us it has been 18 years since naavaa formed and naavaa came up with true colors and tremendous growth of activities and good governing body founder presidents and last presidents. Lets all celebrate this happy movement with joy.",
@@ -65,19 +68,21 @@
             
         ],
         "time": "07:15 AM",
-        "event_details": {
-            "topic": "NAAVAA Clinic",
-            "time": "7:00 PM to 7:40 PM IST",
-            "date": "9th May 2021"
-        }
+        
+        "date1": {
+      "month": "Nov",
+      "day": "27",
+       "year":"2018"
+    }
        
     },
     {
         "id": 4,
-        "clinic": "NAAVAA Clinic",
+        "title": "Medical Camp - Sep 10, 2018",
         "date": "Monday September 10, 2018",
-        "title": "The event has Started!",
+        "clinic": "The event has Started!",
         "organizer": "Nagarjuna Vidyashramamu, Hill Colony, Nagarjuna Sagar",
+        "location": "Nagarjuna Vidyashramamu, Hill Colony, Nagarjuna Sagar",
         "image": "/images/events_4.jpg",
         "message": "Medical Camp - Sep 10, 2018",
         "desc":"It is a proud movement for all of us it has been 18 years since naavaa formed and naavaa came up with true colors and tremendous growth of activities and good governing body founder presidents and last presidents. Lets all celebrate this happy movement with joy.",
@@ -85,15 +90,20 @@
             "MedicalCamp"
             
         ],
-        "time": "09:00 AM"
+        "time": "09:00 AM",
+        "date1": {
+      "month": "SEP",
+      "day": "10",
+       "year":"2018"
+    }
         
        
     },
     {
         "id": 5,
-        "clinic": "Silver Jubilee Celebrations - 17th & 18th November 2012",
+        "title": "Silver Jubilee Celebrations - 17th & 18th November 2012",
         "date": "Monday December 17, 2012",
-        "title": "The event has Started!",
+        "clinic": "The event has Started!",
         "organizer": "Nagarjuna Vidyashramamu, Hill Colony, Nagarjuna Sagar",
         "image": "/images/events_5.jpg",
         "message": "Silver Jubilee Celebrations - 17th & 18th November 2012",
@@ -105,18 +115,18 @@
             
         ],
         "time": "09:45 AM",
-        "event_details": {
-            "topic": "NAAVAA Clinic",
-            "time": "7:00 PM to 7:40 PM IST",
-            "date": "9th May 2021"
-            
-        }
+        
+        "date1": {
+      "month": "DEC",
+      "day": "17",
+       "year":"2012"
+    }
     },
     {
         "id": 6,
-        "clinic": "NAAVAA Clinic",
+        "title": "SMRUTHI-Dwi Dashabdi Utsav - Dec 16th 2007",
         "date": "Sunday December 16, 2007",
-        "title": "The event has Started!",
+        "clinic": "The event has Started!",
         "organizer": "Nagarjuna Vidyashramamu, Hill Colony, Nagarjuna Sagar",
         "image": "/images/events_4.jpg",
         "message": "SMRUTHI-Dwi Dashabdi Utsav - Dec 16th 2007",
@@ -128,13 +138,11 @@
             
         ],
         "time": "08:30 PM",
-        "event_details": {
-            "topic": "NAAVAA Clinic",
-            "time": "7:00 PM to 7:40 PM IST",
-            "date": "9th May 2021"
-           
-           
-            
-        }
+       
+        "date1": {
+      "month": "DEC",
+      "day": "16",
+       "year":"2007"
+    }
     }
 ]

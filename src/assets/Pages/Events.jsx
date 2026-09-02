@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from "react";
 import { useNavigate } from "react-router-dom";
-import eventsData from "../data/eventsData.json";
+import eventsData from "../data/EventsDataDetails.json";
 import eventsBg from "../../assets/images/events-bg.jpg";
 
 const Events = () => {
@@ -9,8 +9,33 @@ const Events = () => {
     useEffect(() => {
     setEvents(eventsData);
   }, []);
-  const viewDetails = (id) => {
-  navigate(`/events/${id}`);
+//   const viewDetails = (id) => {
+//   navigate(`/events/${id}`);
+// };
+// const viewDetails = (title) => {
+//     const slug = title
+//         .toLowerCase()
+//         .trim()
+//         .replace(/[^\w\s-]/g, "")
+//         .replace(/\s+/g, "-");
+
+//     navigate(`/events/${slug}`);
+// };
+const createSlug = (title) => {
+  return title
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
+};
+
+const viewDetails = (event) => {
+  const slug = createSlug(event.title);
+
+  navigate(`/events/${event.id}-${slug}`);
 };
   return (
     <section
@@ -39,7 +64,7 @@ const Events = () => {
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
 
           {events.slice(0,3).map((event) => (
-            <div onClick={() =>viewDetails(event.id)}
+            <div onClick={() =>viewDetails(event)}
               key={event.id}
               className="flex bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl rounded-[3px] hover:cursor-pointer"
             >
@@ -57,11 +82,11 @@ const Events = () => {
                 </div>
 
                 <span className=" text-[30px] leading-none text-[#002b55] font-medium">
-                  {event.date.day}
+                  {event.date1.day}
                 </span>
 
                 <span className="text-[15px] text-gray-500">
-                  {event.date.month} | {event.date.year}
+                  {event.date1.month} | {event.date1.year}
                 </span>
 
               </div>

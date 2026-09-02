@@ -18,11 +18,15 @@ const Body = () => {
         <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/events" element={<EventsData />} />
-                <Route path="/events/:id" element={<EventDataDetails/>}/>  
-            
+                {/* <Route path="/events/:id" element={<EventDataDetails/>}/>   */}
+            {/* <Route path="/events/:slug" element={<EventDataDetails/>}/> */}
+            <Route path="/events/:storyPath" element={<EventDataDetails/>}/>
             <Route path="/stories" element={<StoriesData />}></Route>
-            <Route path="/stories/:id" element={<StoriesDataDetails />} />
-            <Route path="/archive_stories/:type/:id" element={<ArchiveData />} />
+            {/* <Route path="/stories/:id" element={<StoriesDataDetails />} /> */}
+            {/* <Route path="/stories/:storyPathslug" element={<StoriesDataDetails />} /> */}
+             <Route path="/stories/:storyPath" element={<StoriesDataDetails />} />
+            {/* <Route path="/archive_stories/:type/:id" element={<ArchiveData />} /> */}
+            <Route path="/archive_stories/:type/:slug" element={<ArchiveData />} />
             <Route path="/gallery" element={<Gallery />}></Route>
             <Route path="/notice-board" element={<NoticeBoard />}></Route>
             <Route path="/contact" element={<ContactUS />}/>

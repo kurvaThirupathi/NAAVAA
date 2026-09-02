@@ -5,11 +5,27 @@ import storiesDataResult from "../data/StoriesDataDetails.json";
 import Archive from "./archive";
 
 function StoriesDataDetails(){
-    const { id } = useParams();
+    // const { id } = useParams();
+    // const { slug  } = useParams();
+    const { storyPath   } = useParams(); 
     const navigate = useNavigate();
-    const storiesView = storiesDataResult.find(
-        (item) => String(item.id) === String(id)
-    );
+//     const storiesView = storiesDataResult.find((item) => {
+//     const itemSlug = item.title
+//         .toLowerCase()
+//         .trim()
+//         .replace(/[^\w\s-]/g, "")
+//         .replace(/\s+/g, "-");
+
+//     return itemSlug === slug;
+// });
+const storyId = storyPath.split("-")[0];
+
+const storiesView = storiesDataResult.find(
+  (item) => String(item.id) === storyId
+);
+    // const storiesView = storiesDataResult.find(
+    //     (item) => String(item.id) === String(id)
+    // );
     if (!storiesView) {
         return (
             <section>
@@ -72,7 +88,7 @@ function StoriesDataDetails(){
                     </h1>
 
                     <p className="text-gray-500 mt-3">
-                        No story found for ID: {id}
+                        No story found for ID: {slug}
                     </p>
 {/* onClick={() => navigate("/stories")} */}
                     <button

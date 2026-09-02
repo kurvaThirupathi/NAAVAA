@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import { useNavigate } from "react-router-dom";
 import { Link, Outlet } from "react-router-dom";
-import eventsData from "../data/eventsData.json";
+import eventsData from "../data/EventsDataDetails.json";
 
 import Pagination from "./Pagination";
 
@@ -19,8 +19,33 @@ function EventsData(){
 // const selectedEvent = eventsData.find(
 //   (event) => event.id === selectedId
 // );
-const viewDetails = (id) => {
-  navigate(`/events/${id}`);
+// const viewDetails = (id) => {
+//   navigate(`/events/${id}`);
+// };
+// const viewDetails = (title) => {
+//     const slug = title
+//         .toLowerCase()
+//         .trim()
+//         .replace(/[^\w\s-]/g, "")
+//         .replace(/\s+/g, "-");
+
+//     navigate(`/events/${slug}`);
+// };
+const createSlug = (title) => {
+  return title
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
+};
+
+const viewDetails = (event) => {
+  const slug = createSlug(event.title);
+
+  navigate(`/events/${event.id}-${slug}`);
 };
      // Starting index
   const startIndex =(currentPage - 1) * ITEMS_PER_PAGE;
@@ -57,7 +82,7 @@ const viewDetails = (id) => {
                         {currentEvents.map((event) => (
 
                             <div key={event.id} className="hover:cursor-pointer group/view flex flex-col gap-5 px-3 py-2 border-[1.5px] border-[#f5a712] border-dashed rounded-md shadow bg-white [transition:all_0.5s_ease]" onClick={() =>
-                                    viewDetails(event.id)
+                                    viewDetails(event)
                                 }>
 
                             <div className="relative w-full h-[150px] flex-shrink-0 group-hover/view:scale-[1.04] [transition:all_0.5s_ease]">
@@ -114,7 +139,7 @@ const viewDetails = (id) => {
 
 
                                 <span>
-                                    {event.location}
+                                    {event.organizer}
                                 </span>
 
                                 </div>
@@ -123,13 +148,13 @@ const viewDetails = (id) => {
                                 {/* DESCRIPTION */}
 
                                 <p className="text-gray-600 text-[13px] leading-5 max-w-4xl mb-3 line-clamp-5" title={event.description}>
-                                {event.description}
+                                {event.desc}
                                 </p>
 
 
                                 {/* BUTTON */}
 
-                                <button type="button" onClick={(e) => {e.stopPropagation();viewDetails(event.id);}}
+                                <button type="button" onClick={(e) => {e.stopPropagation();viewDetails(event);}}
                                 className="inline-block
     relative overflow-hidden z-0 px-2.5 py-2 border border-[#4f4f4f] rounded text-[14px] text-gray-800 cursor-pointer transition-all duration-200 ease-in before:content-[''] before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:scale-x-[1.25] before:scale-y-100 before:w-[140%] before:h-[180%] before:bg-[rgba(0,0,0,0.05)] before:rounded-[50%] before:block before:-z-10 before:transition-all before:duration-500 before:delay-100 before:ease-[cubic-bezier(0.55,0,0.1,1)] after:content-[''] after:absolute after:left-[55%] after:top-[180%] after:-translate-x-1/2 after:scale-x-[1.45] after:scale-y-100 after:w-[160%] after:h-[190%] after:bg-[#5f5c9e] after:rounded-[50%] after:block after:-z-10 after:transition-all after:duration-500 after:delay-100 after:ease-[cubic-bezier(0.55,0,0.1,1)] group-hover/view:text-white group-hover/view:border-[#5f5c9e] group-hover/view:before:top-[-35%] group-hover/view:before:bg-[#5f5c9e] group-hover/view:before:scale-x-[0.8] group-hover/view:before:scale-y-[1.3] group-hover/view:after:top-[-45%] group-hover/view:after:bg-[#5f5c9e] group-hover/view:after:scale-x-[0.8] group-hover/view:after:scale-y-[1.3]">
                                 View Details</button>

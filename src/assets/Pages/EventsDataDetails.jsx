@@ -1,16 +1,32 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-import eventsData from "../data/eventsDataDetails.json";
+import eventsData from "../data/EventsDataDetails.json";
 import carousel4 from "../../assets/images/carouse_4.jpg";
 const EventDataDetails = () => {
-    const { id } = useParams();
+    // const { id } = useParams();
+    //  const { slug  } = useParams();
+    const { storyPath   } = useParams();
     const navigate = useNavigate();
 
     // Find event based on URL id
-    const event = eventsData.find(
-        (item) => String(item.id) === String(id)
-    );
+    // const event = eventsData.find((item) => {
+    //     const itemSlug = item.title
+    //         .toLowerCase()
+    //         .trim()
+    //         .replace(/[^\w\s-]/g, "")
+    //         .replace(/\s+/g, "-");
+    
+    //     return itemSlug === slug;
+    // });
+    const storyId = storyPath.split("-")[0];
+
+const event = eventsData.find(
+  (item) => String(item.id) === storyId
+);
+    // const event = eventsData.find(
+    //     (item) => String(item.id) === String(id)
+    // );
 
     // =========================
     // EVENT NOT FOUND
@@ -68,7 +84,7 @@ const EventDataDetails = () => {
                                 </h1>
             
                                 <p className="text-gray-500 mt-3">
-                                    No event found for ID: {id}
+                                    No event found for ID: {slug}
                                 </p>
             {/* onClick={() => navigate("/events")} */}
                                 <button
@@ -274,13 +290,13 @@ const EventDataDetails = () => {
                     <div className=" bg-white border-l-4 border-[#f5a712] p-5 rounded-r-md shadow">
                         <div className="flex gap-3 items-center">
                             <div className="flex flex-col gap-5 flex-1 w-3/4">
-                                <h1 className="text-gray-900 text-lg md:text-xl font-normal lg:mt-5">{event.title}</h1>
+                                <h1 className="text-gray-900 text-lg md:text-xl font-normal lg:mt-5">{event.clinic}</h1>
                                 <p className="
                                     text-gray-900
                                     text-[32px]
                                     
                                 ">
-                                    "{event.message}"
+                                    "{event.title}"
                                 </p>
 
                                 <div className="flex flex-wrap gap-2">
@@ -369,151 +385,7 @@ const EventDataDetails = () => {
                         </div>
 
 
-                        {/* <div className="
-                            border
-                            border-gray-200
-                            rounded-lg
-                            p-5
-                            md:p-8
-                            shadow-sm
-                        ">
-
-                            
-                            <div className="mb-6">
-
-                                <p className="text-sm text-gray-500">
-                                    Topic
-                                </p>
-
-                                <p className="
-                                    text-lg
-                                    font-medium
-                                    text-gray-800
-                                    mt-1
-                                ">
-                                    {event.event_details.topic}
-                                </p>
-
-                            </div>
-
-
                         
-                            <div className="
-                                grid
-                                grid-cols-1
-                                md:grid-cols-2
-                                gap-6
-                                mb-8
-                            ">
-
-                                <div>
-                                    <p className="text-sm text-gray-500">
-                                        Event Date
-                                    </p>
-
-                                    <p className="
-                                        text-gray-800
-                                        font-medium
-                                        mt-1
-                                    ">
-                                        {event.event_details.date}
-                                    </p>
-                                </div>
-
-
-                                <div>
-                                    <p className="text-sm text-gray-500">
-                                        Event Time
-                                    </p>
-
-                                    <p className="
-                                        text-gray-800
-                                        font-medium
-                                        mt-1
-                                    ">
-                                        {event.event_details.time}
-                                    </p>
-                                </div>
-
-                            </div>
-
-                            <div>
-
-                                <h3 className="
-                                    text-xl
-                                    font-semibold
-                                    text-gray-800
-                                    mb-4
-                                ">
-                                    Speakers
-                                </h3>
-
-
-                                <div className="
-                                    grid
-                                    grid-cols-1
-                                    md:grid-cols-2
-                                    gap-4
-                                ">
-
-                                    {event.event_details.speakers.map(
-                                        (speaker, index) => (
-                                            <div
-                                                key={index}
-                                                className="
-                                                    border
-                                                    border-gray-200
-                                                    rounded-md
-                                                    p-5
-                                                    bg-gray-50
-                                                "
-                                            >
-
-                                                <h4 className="
-                                                    text-lg
-                                                    font-semibold
-                                                    text-gray-800
-                                                ">
-                                                    {speaker.name}
-                                                </h4>
-
-                                                <p className="
-                                                    text-sm
-                                                    text-gray-500
-                                                    mt-2
-                                                ">
-                                                    Batch: {speaker.batch}
-                                                </p>
-
-                                                {speaker.profession && (
-                                                    <p className="
-                                                        text-sm
-                                                        text-gray-500
-                                                        mt-1
-                                                    ">
-                                                        Profession:{" "}
-                                                        {speaker.profession}
-                                                    </p>
-                                                )}
-
-                                                <p className="
-                                                    text-sm
-                                                    text-gray-500
-                                                    mt-1
-                                                ">
-                                                    Location:{" "}
-                                                    {speaker.location}
-                                                </p>
-
-                                            </div>
-                                        )
-                                    )}
-
-                                </div>
-
-                            </div>
-
-                        </div> */}
 
                     </div>
 

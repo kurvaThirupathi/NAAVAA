@@ -32,18 +32,14 @@ const Gallery = () => {
   // OPEN MODAL
   // =========================
 
-  const openModal = (image) => {
-    setSelectedImage(image);
-  };
+  const openModal = (image) => {setSelectedImage(image);};
 
 
   // =========================
   // CLOSE MODAL
   // =========================
 
-  const closeModal = () => {
-    setSelectedImage(null);
-  };
+  const closeModal = () => {setSelectedImage(null);};
 
 
   // =========================

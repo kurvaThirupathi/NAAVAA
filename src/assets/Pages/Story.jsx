@@ -1,22 +1,49 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import newsData from "../data/news.json";
+import newsData from "../data/StoriesDataDetails.json";
 import Archive from "./archive";
 
-import news1 from "../../assets/images/carouse_1.jpg";
-import news2 from "../../assets/images/carouse_2.jpg";
-import news3 from "../../assets/images/carouse_3.jpg";
+import news1 from "/images/naavaa_results.jpg";
+import news2 from "/images/carouse_4.jpg";
+import news3 from "/images/carouse_3.jpg";
+import news4 from "/images/events_4.jpg";
 
 const imageMap = {
-  "carouse_1.jpg": news1,
-  "carouse_2.jpg": news2,
-  "carouse_3.jpg": news3,
+  "/images/naavaa_results.jpg": news1,
+  "/images/carouse_4.jpg": news2,
+  "/images/carouse_3.jpg": news3,
+  "/images/events_4.jpg": news4,
 };
 
 const Story = () => {
   const navigate = useNavigate();
-  const viewDetails = (id) => {
-  navigate(`/stories/${id}`);
+//   const viewDetails = (id) => {
+//   navigate(`/stories/${id}`);
+// };
+// const viewDetails = (title) => {
+//     const slug = title
+//         .toLowerCase()
+//         .trim()
+//         .replace(/[^\w\s-]/g, "")
+//         .replace(/\s+/g, "-");
+
+//     navigate(`/stories/${slug}`);
+// };
+const createSlug = (title) => {
+  return title
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
+};
+
+const viewDetails = (story) => {
+  const slug = createSlug(story.title);
+
+  navigate(`/stories/${story.id}-${slug}`);
 };
   const featuredNews = newsData.find((item) => item.featured);
 
@@ -40,7 +67,7 @@ const Story = () => {
               </div>
               <div className="grid grid-cols-2 gap-8">
 
-                <div className="cursor-pointer bg-white shadow-lg rounded-sm" onClick={() => viewDetails(featuredNews.id)}>
+                <div className="cursor-pointer bg-white shadow-lg rounded-sm" onClick={() => viewDetails(featuredNews)}>
 
                   <div className="h-[180px] overflow-hidden">
 
@@ -58,11 +85,11 @@ const Story = () => {
 
                 </div>
 
-                <div className="flex flex-col">
+                <div className="flex flex-col max-h-[320px] min-h-[320px] overflow-y-auto overflow-x-hidden">
 
-                  {smallNews.map((news, index) => (
+                  {smallNews.slice(0,2).map((news, index) => (
 
-                    <div onClick={() => viewDetails(news.id)}
+                    <div onClick={() => viewDetails(news)}
                       key={news.id}
                       className={`cursor-pointer bg-white p-2 rounded-sm shadow-lg mb-2 flex gap-5 py-3 items-center ${index !== smallNews.length - 1 ? "border-b border-gray-300" : ""}`}>
 

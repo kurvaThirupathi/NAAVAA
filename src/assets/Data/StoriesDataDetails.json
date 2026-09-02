@@ -8,10 +8,12 @@
         "organizer":"Dr. Chakrapani",
         "date": "Sunday November 18, 2018",
         "image": "/images/naavaa_results.jpg",
+        "featured": true,
         "date1": {
         "month": "Nov",
         "day": "18",
         "year":"2018"
+        
         }
         
     },
@@ -55,7 +57,7 @@
         "description_2":"The association has grown in number and quality in the past few years which now comprises of around 1500 members in it. As the association grew, we decided to incorporate professionalism in the association and made it into an organization. As first step towards this we reregistered the association in the year 2007 as “Nāgarjuna Vidhyashramamu Alumni Association” in short “NAAVAA” (Regd. No. 1101/2007).",
         "organizer":"Saidulu",
         "date": "Tuesday November 13, 2018",
-        "image": "/images/carouse_3.jpg",
+        "image": "/images/naavaa-home.jpg",
         "date1": {
         "month": "Nov",
         "day": "13",

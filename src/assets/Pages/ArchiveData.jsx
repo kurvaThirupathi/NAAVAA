@@ -1,6 +1,6 @@
 
 import React from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams,useLocation } from "react-router-dom";
 import archiveData from "../Data/archive.json";
 import carousel4 from "../../assets/images/carouse_4.jpg";
 
@@ -8,10 +8,12 @@ function ArchiveData() {
 
   const navigate = useNavigate();
 
-  const { type, id } = useParams();
+  // const { type, id } = useParams();
 
+const { type, slug } = useParams();
+ const location = useLocation();
 
- 
+const id = location.state?.id;
   let selectedData = null;
 
   Object.entries(archiveData).forEach(([year, months]) => {
@@ -26,7 +28,7 @@ function ArchiveData() {
           const stories = dayData.stories || [];
 
           const story = stories.find(
-            (item) => String(item.id) === String(id)
+             (item) => String(item.id) === String(id)
           );
 
           if (story) {
@@ -50,7 +52,7 @@ function ArchiveData() {
           const events = dayData.events || [];
 
           const event = events.find(
-            (item) => String(item.id) === String(id)
+             (item) => String(item.id) === String(id)
           );
 
           if (event) {
@@ -112,7 +114,7 @@ function ArchiveData() {
 
           <h2 className="text-xl text-gray-500">No {type} details found</h2>
 
-          <p className="text-sm text-gray-400 mt-2">ID: {id}</p>
+          <p className="text-sm text-gray-400 mt-2">ID: {slug}</p>
 
           <button type="button" onClick={handleBack}
             className="mt-5 px-5 py-2 bg-[#5f5c9e] text-white rounded hover:bg-[#4d4a85] transition-all"
