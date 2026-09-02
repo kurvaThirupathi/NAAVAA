@@ -192,15 +192,15 @@ const storiesView = storiesDataResult.find(
 
                             <h2 className="text-2xl font-semibold text-gray-800 mb-5">Story Details</h2>
                             <div className="flex flex-col gap-3 bg-white shadow p-4 rounded-lg">
-                                <div className="text-[15px] font-normal text-gray-600 line-clamp-4" title={storiesView.description}>
+                                <div className="text-[15px] font-normal text-gray-600 whitespace-pre-line" title={storiesView.description}>
                                     {storiesView.description}
                                 </div>
-                                <div className="text-[15px] font-normal text-gray-600 line-clamp-4" title={storiesView.description_1}>
+                                {/* <div className="text-[15px] font-normal text-gray-600 line-clamp-4" title={storiesView.description_1}>
                                     {storiesView.description_1}
                                 </div>
                                 <div className="text-[15px] font-normal text-gray-600 line-clamp-4" title={storiesView.description_2}>
                                     {storiesView.description_2}
-                                </div>
+                                </div> */}
 
                             </div>
 

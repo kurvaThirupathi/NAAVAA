@@ -6,8 +6,38 @@ import carousel4 from "../../assets/images/carouse_4.jpg";
 const ITEMS_PER_PAGE = 3;
 function StoriesData(){
     const [currentPage, setCurrentPage] = useState(1);
-     const totalPages = Math.ceil(storiesDataView.length / ITEMS_PER_PAGE);
+     
      const navigate = useNavigate();
+     const monthMap = {
+        Jan: 0,
+        Feb: 1,
+        Mar: 2,
+        Apr: 3,
+        May: 4,
+        Jun: 5,
+        Jul: 6,
+        Aug: 7,
+        Sep: 8,
+        Sept: 8,
+        Oct: 9,
+        Nov: 10,
+        Dec: 11,
+    };
+    const sortedStories = [...storiesDataView].sort((a, b) => {
+        const dateA = new Date(
+            Number(a.date1.year),
+            monthMap[a.date1.month],
+            Number(a.date1.day)
+        );
+
+        const dateB = new Date(
+            Number(b.date1.year),
+            monthMap[b.date1.month],
+            Number(b.date1.day)
+        );
+
+        return dateB - dateA;
+    });
     // const viewDetails = (id) => {
        
     // navigate(`/stories/${id}`);
@@ -37,11 +67,12 @@ const viewDetails = (story) => {
 
   navigate(`/stories/${story.id}-${slug}`);
 };
+const totalPages = Math.ceil(sortedStories.length / ITEMS_PER_PAGE);
      // Starting index
   const startIndex =(currentPage - 1) * ITEMS_PER_PAGE;
 
   // Current page data
-  const currentStories = storiesDataView.slice(startIndex,startIndex + ITEMS_PER_PAGE);
+  const currentStories = sortedStories.slice(startIndex,startIndex + ITEMS_PER_PAGE);
 
   // Page change
   const handlePageChange = (page) => {setCurrentPage(page);

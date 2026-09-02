@@ -6,8 +6,38 @@ import eventsBg from "../../assets/images/events-bg.jpg";
 const Events = () => {
     const [events, setEvents] = useState([]);
     const navigate = useNavigate();
+    const monthMap = {
+        Jan: 0,
+        Feb: 1,
+        Mar: 2,
+        Apr: 3,
+        May: 4,
+        Jun: 5,
+        Jul: 6,
+        Aug: 7,
+        Sep: 8,
+        Sept: 8,
+        Oct: 9,
+        Nov: 10,
+        Dec: 11,
+    };
+    const sortedEvents = [...eventsData].sort((a, b) => {
+        const dateA = new Date(
+            Number(a.date1.year),
+            monthMap[a.date1.month],
+            Number(a.date1.day)
+        );
+
+        const dateB = new Date(
+            Number(b.date1.year),
+            monthMap[b.date1.month],
+            Number(b.date1.day)
+        );
+
+        return dateB - dateA;
+    });
     useEffect(() => {
-    setEvents(eventsData);
+    setEvents(sortedEvents);
   }, []);
 //   const viewDetails = (id) => {
 //   navigate(`/events/${id}`);

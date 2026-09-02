@@ -209,7 +209,7 @@ const id = location.state?.id;
 
                 <img src={imagePath} alt={selectedData.title || "Archive"}
                   loading="lazy"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-fill"
                   onError={(e) => {
                     console.log(
                       "Image not found:",

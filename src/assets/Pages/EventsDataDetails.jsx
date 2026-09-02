@@ -375,12 +375,12 @@ const event = eventsData.find(
                             <div className="text-[15px] font-normal text-gray-600 line-clamp-4" title={event.desc}>
                                 {event.desc}
                             </div>
-                            <div className="text-[15px] font-normal text-gray-600 line-clamp-4" title={event.desc_1}>
+                            {/* <div className="text-[15px] font-normal text-gray-600 line-clamp-4" title={event.desc_1}>
                                 {event.desc_1}
                             </div>
                             <div className="text-[15px] font-normal text-gray-600 line-clamp-4" title={event.desc_2}>
                                 {event.desc_2}
-                            </div>
+                            </div> */}
 
                         </div>
 
