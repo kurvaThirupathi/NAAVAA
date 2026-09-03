@@ -373,7 +373,7 @@ const event = eventsData.find(
                         <h2 className="text-2xl font-semibold text-gray-800 mb-5">Event Details</h2>
                         <div className="flex flex-col gap-3 bg-white shadow p-4 rounded-lg">
                             <div className="text-[15px] font-normal text-gray-600 line-clamp-4" title={event.desc}>
-                                {event.desc}
+                                {event.desc.replace(/\\n/g, "\n")}
                             </div>
                             {/* <div className="text-[15px] font-normal text-gray-600 line-clamp-4" title={event.desc_1}>
                                 {event.desc_1}

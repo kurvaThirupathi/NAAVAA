@@ -193,7 +193,7 @@ const storiesView = storiesDataResult.find(
                             <h2 className="text-2xl font-semibold text-gray-800 mb-5">Story Details</h2>
                             <div className="flex flex-col gap-3 bg-white shadow p-4 rounded-lg">
                                 <div className="text-[15px] font-normal text-gray-600 whitespace-pre-line" title={storiesView.description}>
-                                    {storiesView.description}
+                                    {storiesView.description.replace(/\\n/g, "\n")}
                                 </div>
                                 {/* <div className="text-[15px] font-normal text-gray-600 line-clamp-4" title={storiesView.description_1}>
                                     {storiesView.description_1}
