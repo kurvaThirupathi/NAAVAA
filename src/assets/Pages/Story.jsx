@@ -126,7 +126,7 @@ const Story = () => {
                       className="
                         h-full
                         w-full
-                        object-cover
+                        object-fill
                         transition-transform
                         duration-500
                         hover:scale-105

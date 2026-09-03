@@ -205,11 +205,11 @@ const id = location.state?.id;
 
             {imagePath && (
 
-              <div className="relative w-full h-[200px] overflow-hidden">
+              <div className=" h-full w-full mt-3 mx-auto  overflow-hidden">
 
                 <img src={imagePath} alt={selectedData.title || "Archive"}
                   loading="lazy"
-                  className="w-full h-full object-fill"
+                  className="w-full h-[350px] object-contain"
                   onError={(e) => {
                     console.log(
                       "Image not found:",

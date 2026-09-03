@@ -11,6 +11,20 @@ import { Link } from "react-router-dom";
     .replace(/\s+/g, "-")
     .replace(/-+/g, "-");
 };
+const monthOrder = { 
+    january: 1, 
+    february: 2, 
+    march: 3, 
+    april: 4, 
+    may: 5, 
+    june: 6, 
+    july: 7, 
+    august: 8, 
+    september: 9, 
+    october: 10, 
+    november: 11, 
+    december: 12, 
+};
   function Archive() { 
     return (
     <div className="w-full bg-white py-5 relative shadow-lg rounded-md max-h-[300px] min-h-[300px] overflow-y-auto overflow-x-hidden"> 
@@ -24,9 +38,10 @@ import { Link } from "react-router-dom";
                         <div className=" h-[2px] flex-1 bg-orange-200 " />
                     </div>
                     
-                    {Object.entries(months).map(([month, days]) => (
+                    {Object.entries(months).sort( 
+                        ([monthA], [monthB]) => monthOrder[monthB.toLowerCase()] - monthOrder[monthA.toLowerCase()] ).map(([month, days]) => (
                     <div key={month} className="mb-4" >
-                            {Object.entries(days).map(([day, dayData]) => {
+                            {Object.entries(days).sort(([dayA], [dayB]) => Number(dayB) - Number(dayA)).map(([day, dayData]) => {
                                 const stories = (dayData.stories || []).filter((story) => story.title?.trim() || story.description?.trim() || story.image?.trim());
                                 const events = (dayData.events || []).filter((event) => event.title?.trim() || event.description?.trim() || event.image?.trim());
                                 return (
