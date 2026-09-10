@@ -178,7 +178,7 @@ const totalPages = Math.ceil(sortedEvents.length / ITEMS_PER_PAGE);
 
                                 {/* DESCRIPTION */}
 
-                                <p className="text-gray-600 text-[13px] leading-5 max-w-4xl mb-3 whitespace-pre-line" title={event.description}>
+                                <p className="text-gray-600 text-[13px] leading-5 max-w-4xl mb-3 line-clamp-5" title={event.description}>
                                 {event.description}
                                 </p>
 
