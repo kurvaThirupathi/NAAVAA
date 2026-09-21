@@ -1,7 +1,35 @@
 import { NavLink, Link } from "react-router-dom";
 import logo from "../../assets/images/naavaa_logo.png";
+import EventsDataNew from "../Data/EventsDataDetails.json";
+import StoriesDataNew from "../Data/StoriesDataDetails.json";
+import newImage from "../../../public/images/new.gif";
 
-const NavItem = ({to,label,end = false,activePaths = [],}) => {
+ const new_days=30;
+ const isLatestDataNew = (data) => {
+    if (!data || data.length === 0) {
+        return false;
+    }
+    const sortedData = [...data].sort(
+        (a, b) =>
+            new Date(b.date) - new Date(a.date)
+    );
+    const latestItem = sortedData[0];
+
+    if (!latestItem?.date) {
+        return false;
+    }
+
+    const latestDate = new Date(latestItem.date);
+
+    const currentDate = new Date();
+    const difference =
+        currentDate.getTime() - latestDate.getTime();
+        const differenceInDays =
+        difference / (1000 * 60 * 60 * 24);
+
+    return differenceInDays <= new_days;
+ }
+const NavItem = ({to,label,end = false,activePaths = [],isNew = false}) => {
 
     return (
 
@@ -20,13 +48,22 @@ const NavItem = ({to,label,end = false,activePaths = [],}) => {
                 const active = isActive || customActive;
                 return active ? "text-[#002147] text-[14px]  bg-white px-2.5 py-2 rounded-sm": "text-white text-[14px] hover:bg-white hover:rounded-sm hover:text-[#002147] transition px-2.5 py-2 ";
 
-            }}>{label}</NavLink>
+            }}><span className="relative">{label}
+            {isNew && (
+                    <span className="absolute -top-[0.7rem] -right-5">
+                        <img src={newImage} />
+                    </span>
+                )}
+                </span>
+            </NavLink>
 
     );
 };
 
 const Header = () => {
 
+const hasNewEvents  = isLatestDataNew(EventsDataNew);
+const hasNewStories = isLatestDataNew(StoriesDataNew);
     return (
         <header>
             {/* <div className="relative z-[999]  px-0">
@@ -79,11 +116,12 @@ const Header = () => {
                                <NavLink to="/alumni" onClick={(e) => e.preventDefault()} className="text-white text-[14px] opacity-50 cursor-not-allowed px-2.5 py-2">Alumni</NavLink>
                             </li>
                             <li>
-                                <NavItem to="/events" label="Events" />
+                                <NavItem to="/events" label="Events" isNew={hasNewEvents} />
+
                             </li>
                             <li>
                                 {/* <NavItem to="/stories" label="Stories" activePaths={[ "/story/" ]}/> */}
-                                <NavItem to="/stories" label="Stories"/>
+                                <NavItem to="/stories" label="Stories" isNew={hasNewStories}/>
                             </li>
                             <li>
                                <NavItem to="/gallery" label="Gallery"/>
