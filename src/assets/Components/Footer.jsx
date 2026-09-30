@@ -123,7 +123,7 @@ const Footer = () => {
                     <div class="p-4 flex items-center justify-center bg-[#ca9c5e]">
                     <div class="flex items-center justify-center">
                     <a class="mr-6 cursor-default md:mr-6 md:text-sm text-xs text-white flex text-font font-medium">&copy;
-                    <p id="demo" class="mx-1">2026</p> navaa.org
+                    <p id="demo" class="mx-1">{new Date().getFullYear()}</p> navaa.org
                     </a>
                     <a href="javascript:void(0);"  target="_blank" class="pointer-events-none md:text-sm text-xs text-white text-font font-medium">
                     Powered By NAAVAA</a>
