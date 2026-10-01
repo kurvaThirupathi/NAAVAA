@@ -114,7 +114,7 @@ function ArchiveData() {
         <div className="bg-[#f5f5f5] pt-10 pb-10 px-2 md:px-6 relative bg-repeat bg-center bg-[url('https://themesflat.co/html/wizym/image/footer.jpg')]">
 
           <div className="mb-6">
-            <button type="button" onClick={handleBack} className="px-4 py-2 border border-[#5f5c9e] rounded  text-sm text-[#5f5c9e]hover:bg-[#5f5c9e] hover:text-white transition-all duration-300">
+            <button type="button" onClick={handleBack} className="px-4 py-2 border border-[#5f5c9e] rounded  text-sm text-[#5f5c9e] hover:bg-[#5f5c9e] hover:text-white transition-all duration-300">
               ← Back to Archive</button>
 
           </div>
